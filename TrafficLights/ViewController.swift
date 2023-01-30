@@ -13,22 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
     
+    @IBOutlet var changeColorButton: UIButton!
+    
     private let lightOff: CGFloat = 0.3
     private let lightOn: CGFloat = 1
-    
-    @IBOutlet var changeColorButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         redLightView.alpha = lightOff
-        redLightView.layer.cornerRadius = 60
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
         
         yellowLightView.alpha = lightOff
-        yellowLightView.layer.cornerRadius = 60
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
         
         greenLightView.alpha = lightOff
-        greenLightView.layer.cornerRadius = 60
+        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         
         changeColorButton.layer.cornerRadius = 15
         
