@@ -21,6 +21,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        redLightView.alpha = lightOff
+//        redLightView.layer.cornerRadius = redLightView.frame.width / 2
+//        
+//        yellowLightView.alpha = lightOff
+//        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+//        
+//        greenLightView.alpha = lightOff
+//        greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
+        
+        changeColorButton.layer.cornerRadius = 15
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
         redLightView.alpha = lightOff
         redLightView.layer.cornerRadius = redLightView.frame.width / 2
         
@@ -31,7 +45,6 @@ class ViewController: UIViewController {
         greenLightView.layer.cornerRadius = greenLightView.frame.width / 2
         
         changeColorButton.layer.cornerRadius = 15
-        
     }
 
     @IBAction func changeColorButtonDidTapped() {
